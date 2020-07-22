@@ -5,9 +5,12 @@
 
 ## 图片引用路径
 
-- Markdown中引用的图片需要放到Hugo项目的static目录下，注意不是themes/LoveIt/static中的static目录
-- 编写Markdown中的图片引用时使用相对路径，表示上级目录的两个点（`../`）在这里是指static目录。
-  - 比如`../images/posts/image.png`是指`static/images/posts/image.png`
+- 方式1：
+  - 将Markdown中引用的图片放到Hugo项目的static目录下，注意不是themes/LoveIt/static中的static目录
+  - 编写Markdown中的图片引用时使用相对路径，表示上级目录的两个点（`../`）在这里是指static目录。
+    - 比如`../images/posts/image.png`是指`static/images/posts/image.png`
+- 方式2：
+  - 将Markdown文件名命名为index.md或_index.md，就可以使用相对路径引用和Markdown文件同一目录下的图片
 
 ## 目录配置（TOC）
 

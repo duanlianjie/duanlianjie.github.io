@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Hugo中Markdown转网页的一些注意事项 - 段连杰</title><meta name="Description" content="段连杰"><meta property="og:title" content="Hugo中Markdown转网页的一些注意事项" />
-<meta property="og:description" content="Hugo中Markdown转网页的一些注意事项 图片引用路径 Markdown中引用的图片需要放到Hugo项目的static目录下，注意不是th" />
+<meta property="og:description" content="Hugo中Markdown转网页的一些注意事项 图片引用路径 方式1： 将Markdown中引用的图片放到Hugo项目的static目录下，注意不" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://duanlianjie.github.io/hugomarkdown/" />
 <meta property="og:image" content="https://duanlianjie.github.io/47"/>
@@ -16,7 +16,7 @@
 <meta name="twitter:image" content="https://duanlianjie.github.io/47"/>
 
 <meta name="twitter:title" content="Hugo中Markdown转网页的一些注意事项"/>
-<meta name="twitter:description" content="Hugo中Markdown转网页的一些注意事项 图片引用路径 Markdown中引用的图片需要放到Hugo项目的static目录下，注意不是th"/>
+<meta name="twitter:description" content="Hugo中Markdown转网页的一些注意事项 图片引用路径 方式1： 将Markdown中引用的图片放到Hugo项目的static目录下，注意不"/>
 <meta name="application-name" content="段连杰">
 <meta name="apple-mobile-web-app-title" content="段连杰"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/duanlianjie.github.io\/hugomarkdown\/"
-        },"genre": "posts","keywords": "Markdown","wordcount":  362 ,
+        },"genre": "posts","keywords": "Markdown","wordcount":  433 ,
         "url": "https:\/\/duanlianjie.github.io\/hugomarkdown\/","datePublished": "2020-07-21T22:31:23+08:00","dateModified": "2020-07-21T22:31:23+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -110,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Hugo中Markdown转网页的一些注意事项</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>段连杰</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/markdown/"><i class="far fa-folder fa-fw"></i>Markdown</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-07-21">2020-07-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 362 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-07-21">2020-07-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 433 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/hugomarkdown/" class="leancloud_visitors" data-flag-title="Hugo中Markdown转网页的一些注意事项">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -129,10 +129,19 @@
             </div><div class="content" id="content"><h1 id="hugo中markdown转网页的一些注意事项">Hugo中Markdown转网页的一些注意事项</h1>
 <h2 id="图片引用路径">图片引用路径</h2>
 <ul>
-<li>Markdown中引用的图片需要放到Hugo项目的static目录下，注意不是themes/LoveIt/static中的static目录</li>
+<li>方式1：
+<ul>
+<li>将Markdown中引用的图片放到Hugo项目的static目录下，注意不是themes/LoveIt/static中的static目录</li>
 <li>编写Markdown中的图片引用时使用相对路径，表示上级目录的两个点（<code>../</code>）在这里是指static目录。
 <ul>
 <li>比如<code>../images/posts/image.png</code>是指<code>static/images/posts/image.png</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>方式2：
+<ul>
+<li>将Markdown文件名命名为index.md或_index.md，就可以使用相对路径引用和Markdown文件同一目录下的图片</li>
 </ul>
 </li>
 </ul>

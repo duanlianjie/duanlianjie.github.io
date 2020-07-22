@@ -12,11 +12,11 @@
     <guid>https://duanlianjie.github.io/hugotoserver/</guid>
     <description><![CDATA[将Hugo生成的静态网页部署到云服务器 以CentOS 7.6云服务器为例 使用Xshell登录云服务器或使用WebShell登录云服务器(在服务]]></description>
 </item><item>
-    <title>将Hugo个人博客部署到Github</title>
+    <title>将Hugo生成的静态网页部署到Github</title>
     <link>https://duanlianjie.github.io/hugotogithub/</link>
     <pubDate>Thu, 16 Jul 2020 21:58:14 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://duanlianjie.github.io/hugotogithub/</guid>
-    <description><![CDATA[将Hugo个人博客部署到Github 前提条件 成功安装Hugo，在源文件目录下运行hugo serve时可以在浏览器输入localhost:13]]></description>
+    <description><![CDATA[将Hugo生成的静态网页部署到Github 前提条件 成功安装Hugo，在源文件目录下运行hugo serve时可以在浏览器输入localhost]]></description>
 </item></channel>
 </rss>

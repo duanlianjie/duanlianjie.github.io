@@ -1,7 +1,7 @@
-# 将Hugo个人博客部署到Github
+# 将Hugo生成的静态网页部署到Github
 
 
-## 将Hugo个人博客部署到Github
+## 将Hugo生成的静态网页部署到Github
 
 ### 前提条件
 

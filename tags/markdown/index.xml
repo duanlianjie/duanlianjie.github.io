@@ -10,7 +10,7 @@
     <pubDate>Tue, 21 Jul 2020 22:31:23 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://duanlianjie.github.io/hugomarkdown/</guid>
-    <description><![CDATA[Hugo中Markdown转网页的一些注意事项 图片引用路径 Markdown中引用的图片需要放到Hugo项目的static目录下，注意不是th]]></description>
+    <description><![CDATA[Hugo中Markdown转网页的一些注意事项 图片引用路径 方式1： 将Markdown中引用的图片放到Hugo项目的static目录下，注意不]]></description>
 </item><item>
     <title>Emoij支持</title>
     <link>https://duanlianjie.github.io/emoij/</link>
