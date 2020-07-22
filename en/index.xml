@@ -3,7 +3,8 @@
         <title>duanlianjie</title>
         <link>https://duanlianjie.github.io/en/</link>
         <description>段连杰</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>duanlianjie1999@qq.com (段连杰)</managingEditor>
+            <webMaster>duanlianjie1999@qq.com (段连杰)</webMaster>
             <atom:link href="https://duanlianjie.github.io/en/index.xml" rel="self" type="application/rss+xml" />
         </channel>
 </rss>

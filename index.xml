@@ -3,28 +3,43 @@
         <title>段连杰</title>
         <link>https://duanlianjie.github.io/</link>
         <description>段连杰</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 16 Jul 2020 21:58:14 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>duanlianjie1999@qq.com (段连杰)</managingEditor>
+            <webMaster>duanlianjie1999@qq.com (段连杰)</webMaster><lastBuildDate>Tue, 21 Jul 2020 22:31:23 &#43;0800</lastBuildDate>
             <atom:link href="https://duanlianjie.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Hugo个人博客部署到Github</title>
-    <link>https://duanlianjie.github.io/post2/</link>
+    <title>Hugo中Markdown转网页的一些注意事项</title>
+    <link>https://duanlianjie.github.io/hugomarkdown/</link>
+    <pubDate>Tue, 21 Jul 2020 22:31:23 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://duanlianjie.github.io/hugomarkdown/</guid>
+    <description><![CDATA[Hugo中Markdown转网页的一些注意事项 图片引用路径 Markdown中引用的图片需要放到Hugo项目的static目录下，注意不是th]]></description>
+</item><item>
+    <title>将Hugo生成的静态网页部署到云服务器</title>
+    <link>https://duanlianjie.github.io/hugotoserver/</link>
+    <pubDate>Sun, 19 Jul 2020 18:39:03 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://duanlianjie.github.io/hugotoserver/</guid>
+    <description><![CDATA[将Hugo生成的静态网页部署到云服务器 以CentOS 7.6云服务器为例 使用Xshell登录云服务器或使用WebShell登录云服务器(在服务]]></description>
+</item><item>
+    <title>将Hugo个人博客部署到Github</title>
+    <link>https://duanlianjie.github.io/hugotogithub/</link>
     <pubDate>Thu, 16 Jul 2020 21:58:14 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://duanlianjie.github.io/post2/</guid>
-    <description><![CDATA[Hugo个人博客部署到Github 前提条件 成功安装Hugo，在源文件目录下运行hugo serve时可以在浏览器输入localhost:131]]></description>
+    <guid>https://duanlianjie.github.io/hugotogithub/</guid>
+    <description><![CDATA[将Hugo个人博客部署到Github 前提条件 成功安装Hugo，在源文件目录下运行hugo serve时可以在浏览器输入localhost:13]]></description>
 </item><item>
     <title>我的第一篇文章</title>
-    <link>https://duanlianjie.github.io/post1/</link>
+    <link>https://duanlianjie.github.io/first/</link>
     <pubDate>Wed, 15 Jul 2020 23:16:14 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://duanlianjie.github.io/post1/</guid>
+    <guid>https://duanlianjie.github.io/first/</guid>
     <description><![CDATA[段连杰 好好学习 天天向上]]></description>
 </item><item>
-    <title>测试</title>
-    <link>https://duanlianjie.github.io/post_test/</link>
-    <pubDate>Wed, 01 Jan 2020 16:41:27 &#43;0800</pubDate>
+    <title>Emoij支持</title>
+    <link>https://duanlianjie.github.io/emoij/</link>
+    <pubDate>Tue, 01 Jan 2019 16:41:27 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://duanlianjie.github.io/post_test/</guid>
-    <description><![CDATA[🐮🍺]]></description>
+    <guid>https://duanlianjie.github.io/emoij/</guid>
+    <description><![CDATA[​ 原文链接 Emoji 支持 Emoji 可以通过多种方式在 Hugo 项目中启用. emojify 方法可以直接在模板中调用, 或者使用行内 Shortcodes. 要全局使用 emoji, 需要在你的网站配置中设置 enableEmoji 为 true, 然后你]]></description>
 </item></channel>
 </rss>
