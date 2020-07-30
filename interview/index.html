@@ -5,32 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>将Hugo生成的静态网页部署到Github - 段连杰</title><meta name="Description" content="段连杰"><meta property="og:title" content="将Hugo生成的静态网页部署到Github" />
-<meta property="og:description" content="将Hugo生成的静态网页部署到Github 前提条件 成功安装Hugo，在源文件目录下运行hugo serve时可以在浏览器输入localhost" />
+        <title>面试题 - 段连杰</title><meta name="Description" content="段连杰"><meta property="og:title" content="面试题" />
+<meta property="og:description" content="[TOC] String String为什么是final类型的？ final修饰的类是不被能继承的，所以final修饰的类是不能被篡改的。 原因 为了实现字符串池 只有当" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://duanlianjie.github.io/hugotogithub/" />
+<meta property="og:url" content="https://duanlianjie.github.io/interview/" />
 <meta property="og:image" content="https://duanlianjie.github.io/47"/>
-<meta property="article:published_time" content="2020-07-16T21:58:14+08:00" />
-<meta property="article:modified_time" content="2020-07-16T21:58:14+08:00" /><meta property="og:site_name" content="段连杰" />
+<meta property="article:published_time" content="2020-07-22T16:21:45+08:00" />
+<meta property="article:modified_time" content="2020-07-22T16:21:45+08:00" /><meta property="og:site_name" content="段连杰" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://duanlianjie.github.io/47"/>
 
-<meta name="twitter:title" content="将Hugo生成的静态网页部署到Github"/>
-<meta name="twitter:description" content="将Hugo生成的静态网页部署到Github 前提条件 成功安装Hugo，在源文件目录下运行hugo serve时可以在浏览器输入localhost"/>
+<meta name="twitter:title" content="面试题"/>
+<meta name="twitter:description" content="[TOC] String String为什么是final类型的？ final修饰的类是不被能继承的，所以final修饰的类是不能被篡改的。 原因 为了实现字符串池 只有当"/>
 <meta name="application-name" content="段连杰">
 <meta name="apple-mobile-web-app-title" content="段连杰"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://duanlianjie.github.io/hugotogithub/" /><link rel="prev" href="https://duanlianjie.github.io/first/" /><link rel="next" href="https://duanlianjie.github.io/hugotoserver/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://duanlianjie.github.io/interview/" /><link rel="prev" href="https://duanlianjie.github.io/hugomarkdown/" /><link rel="next" href="https://duanlianjie.github.io/linux/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "将Hugo生成的静态网页部署到Github",
+        "headline": "面试题",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/duanlianjie.github.io\/hugotogithub\/"
-        },"genre": "posts","keywords": "Hugo","wordcount":  942 ,
-        "url": "https:\/\/duanlianjie.github.io\/hugotogithub\/","datePublished": "2020-07-16T21:58:14+08:00","dateModified": "2020-07-16T21:58:14+08:00","publisher": {
+            "@id": "https:\/\/duanlianjie.github.io\/interview\/"
+        },"genre": "posts","keywords": "面试","wordcount":  1633 ,
+        "url": "https:\/\/duanlianjie.github.io\/interview\/","datePublished": "2020-07-22T16:21:45+08:00","dateModified": "2020-07-22T16:21:45+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -104,10 +104,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">将Hugo生成的静态网页部署到Github</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>段连杰</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/hugo/"><i class="far fa-folder fa-fw"></i>Hugo</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-07-16">2020-07-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 942 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;<span id="/hugotogithub/" class="leancloud_visitors" data-flag-title="将Hugo生成的静态网页部署到Github">
+        </div><article class="page single"><h1 class="single-title animated flipInX">面试题</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>段连杰</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E9%9D%A2%E8%AF%95/"><i class="far fa-folder fa-fw"></i>面试</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-07-22">2020-07-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1633 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 4 分钟&nbsp;<span id="/interview/" class="leancloud_visitors" data-flag-title="面试题">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
@@ -117,62 +117,153 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#将hugo生成的静态网页部署到github">将Hugo生成的静态网页部署到Github</a>
+    <li><a href="#java内存泄漏">Java内存泄漏</a></li>
+    <li><a href="#java内存泄漏的场景">Java内存泄漏的场景</a>
       <ul>
-        <li><a href="#前提条件">前提条件</a></li>
-        <li><a href="#准备部署">准备部署</a></li>
+        <li><a href="#1静态集合类引起内存泄漏">1.静态集合类引起内存泄漏</a></li>
+        <li><a href="#2监听器">2.监听器</a></li>
+        <li><a href="#3各种连接">3.各种连接</a></li>
+        <li><a href="#4内部类和外部模块的引用">4.内部类和外部模块的引用</a></li>
+        <li><a href="#5单例模式">5.单例模式</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="将hugo生成的静态网页部署到github">将Hugo生成的静态网页部署到Github</h2>
-<h3 id="前提条件">前提条件</h3>
-<ol>
-<li>成功安装Hugo，在源文件目录下运行<code>hugo serve</code>时可以在浏览器输入<code>localhost:1313</code>查看到网页。</li>
-<li>在源文件目录下运行<code>hugo</code>生成public目录。</li>
-<li>在config.toml中配置参数<code>baseURL = &quot;https://&lt;userName&gt;.github.io/&quot;</code>（userName为Github账号ID，下同）。
+            </div><div class="content" id="content"><p>[TOC]</p>
+<h1 id="string">String</h1>
 <ul>
-<li>这一步很关键，如果没有设置最后在浏览器输入<code>https://&lt;userName&gt;.github.io/</code>会查看不到网页。</li>
-<li>除此之外，也可以选择在第二步生成public时运行<code>hugo --baseURL=&quot;https://&lt;userName&gt;.github.io/&quot;</code></li>
+<li>
+<p>String为什么是final类型的？</p>
+<ul>
+<li>
+<p>final修饰的类是不被能继承的，所以final修饰的类是不能被篡改的。</p>
+</li>
+<li>
+<p>原因</p>
+<ul>
+<li>为了实现字符串池
+<ul>
+<li>只有当字符串是不可变的，字符串池才有可能实现。</li>
 </ul>
 </li>
-</ol>
-<h3 id="准备部署">准备部署</h3>
-<p>Hugo官网英文文档给出的部署步骤试了一下没有成功，有几处细节说明不够详细，所以在其基础上给出我的部署步骤。</p>
-<ol>
-<li>在Github新建一个代码仓，代码仓名字为<code>&lt;userName&gt;.github.io</code>。然后将public目录下得文件push到该代码仓。push很简单，在public目录下依次执行：
-<ol>
-<li><code>git init</code></li>
-<li><code>git remote add origin git@github.com:&lt;userName&gt;/&lt;userName&gt;.github.io.git</code></li>
-<li><code>git add .</code></li>
-<li><code>git commit -m &quot;first commit&quot;</code></li>
-<li><code>git push -u origin master</code></li>
-</ol>
+<li>为了线程安全
+<ul>
+<li>同一个字符串实例可以被多个线程共享。这样便不用因为线程安全问题而使用同步。字符串自己便是线程安全的。</li>
+</ul>
 </li>
-</ol>
-<blockquote>
-<p>其实这个时候已经可以访问<code>https://&lt;userName&gt;.github.io/</code>查看网页了，但是后续需要上传新的文章到博客，所以需要进一步部署。</p>
-</blockquote>
-<ol start="2">
+<li>为了实现String可以创建HashCode不可变性
+<ul>
+<li>因为字符串是不可变的，所以在它创建的时候HashCode就被缓存了，不需要重新计算。这就使得字符串很适合作为Map中的键，字符串的处理速度要快过其它的键对象。这就是HashMap中的键往往都使用字符串的原因。</li>
+</ul>
+</li>
+<li>为了安全问题
+<ul>
+<li>字符串的不可变性避免了数据库的安全漏洞</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="内存泄漏">内存泄漏</h1>
+<h2 id="java内存泄漏">Java内存泄漏</h2>
+<ul>
 <li>
-<p>在Github新建一个空的代码仓，代码仓名字随意，比如blog。将其clone到本地，然后打开blog文件夹，将hugo项目的源文件全部复制到该目录下。此时<strong>将public目录删除</strong>，随后重复第一步的push命令，将hugo项目的源文件push到blog代码仓。</p>
+<p>内存泄漏：对象是无用但是可达的，垃圾回收器没办法移除它们，因为还在被引用着，从而造成内存空间的浪费称为内存泄漏。</p>
 </li>
 <li>
-<p>在blog目录下运行如下命令，把<code>&lt;userName&gt;.github.io</code>代码仓添加为blog代码仓的子模块。</p>
+<p>在Java中，内存泄漏就是存在一些被分配的对象，这些对象有下面两个特点：</p>
+<ul>
+<li>
+<p>首先，这些对象是可达的，即在有向图中，存在通路可以与其相连；</p>
+</li>
+<li>
+<p>其次，这些对象是无用的，即程序以后不会再使用这些对象。</p>
+</li>
+<li>
+<p>如果对象满足这两个条件，这些对象就可以判定为Java中的内存泄漏，这些对象不会被GC所回收，然而它却占用内存。</p>
+</li>
+<li>
+<p><img src="images/image-20200722164514994.png" alt="image-20200722164514994" style="zoom:50%;" /></p>
+</li>
+<li>
+<p><img src="images/image-20200722164406547.png" alt="image-20200722164406547" style="zoom:50%;" /></p>
+<ul>
+<li>无用对象不全是未被引用对象。其中还有被引用的。就是这种情况导致了内存泄漏。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>在Java中，判断一个内存空间是否符合垃圾收集的标准有两个：</p>
+<ul>
+<li>一个是给对象赋予了空值null，以下再没有调用过。</li>
+<li>一个是给对象赋予了新值，这样重新分配了内存空间。</li>
+</ul>
+</li>
+</ul>
+<h2 id="java内存泄漏的场景">Java内存泄漏的场景</h2>
+<ul>
+<li>长生命周期的对象持有短生命周期对象的引用就很可能发生内存泄漏，尽管短生命周期对象已经不再需要，但是<strong>因为长生命周期持有它的引用而导致不能被回收，这就是Java中内存泄漏的发生场景</strong>。</li>
+</ul>
+<h3 id="1静态集合类引起内存泄漏">1.静态集合类引起内存泄漏</h3>
+<p>像HashMap、Vector等的使用最容易出现内存泄露，这些静态变量的生命周期和应用程序一致，他们所引用的所有的对象Object也不能被释放，因为他们也将一直被Vector等引用着。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">static</span> <span class="n">Vector</span> <span class="n">v</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="n">10</span><span class="o">);</span>
+
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">100</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+    <span class="n">Object</span> <span class="n">o</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Object</span><span class="o">();</span>
+    <span class="n">v</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">o</span><span class="o">);</span>
+    <span class="n">o</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="2监听器">2.监听器</h3>
+<p>在Java编程中，通常一个应用当中会用到很多监听器。通过调用一个控件的诸如addXXXListener()等方法来增加监听器，但往往在释放对象的时候却没有记住去删除这些监听器，从而增加了内存泄漏的机会。</p>
+<h3 id="3各种连接">3.各种连接</h3>
+<ul>
+<li>比如数据库连接，网络连接和IO连接，除非其显式的调用了其close()方法将其连接关闭，否则是不会自动被GC回收的。
+<ul>
+<li>对于Resultset和Statement对象可以不进行显式回收，但Connection一定要显式回收，因为Connection在任何时候都无法自动回收，而Connection一旦回收，Resultset 和Statement对象就会立即为NULL。</li>
+<li>但是如果使用连接池，情况就不一样了，除了要显式地关闭连接，还必须显式地关闭Resultset Statement对象（关闭其中一个，另外一个也会关闭），否则就会造成大量的Statement对象无法释放，从而引起内存泄漏。这种情况下一般都会在try里面进行连接，在finally里面释放连接。</li>
+</ul>
+</li>
+</ul>
+<h3 id="4内部类和外部模块的引用">4.内部类和外部模块的引用</h3>
+<ul>
+<li>
+<p>内部类的引用是比较容易遗忘的一种，而且一旦没释放可能导致一系列的后继类对象没有释放。</p>
+</li>
+<li>
+<p>外部模块不经意的引用，例如程序员A负责A模块，调用了B模块的一个方法：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git submodule add -b master https://github.com/&lt;userName&gt;/&lt;userName&gt;.github.io.git public
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">registerMsg</span><span class="o">(</span><span class="n">Object</span> <span class="n">b</span><span class="o">);</span>
 </code></pre></td></tr></table>
 </div>
-</div></li>
-<li>
-<p>编写快速更新网页的脚本：</p>
-<ol>
-<li><code>vim deploy.sh</code>，复制以下代码</li>
-</ol>
+</div><ul>
+<li>这种调用传入了一个对象，很可能模块B就保持了对该对象的引用，这时候就需要注意模块B是否提供相应的操作去除引用。</li>
+</ul>
+</li>
+</ul>
+<h3 id="5单例模式">5.单例模式</h3>
+<p>单例对象在初始化后将在JVM的整个生命周期中存在（以静态变量的方式）。</p>
+<p>如果单例对象持有外部的引用，那么这个对象将不能被JVM正常回收，导致内存泄漏。</p>
+<p>考虑下面的例子：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -200,68 +291,64 @@
 </span><span class="lnt">23
 </span><span class="lnt">24
 </span><span class="lnt">25
+</span><span class="lnt">26
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
-</span><span class="cp"></span>   
-<span class="c1"># 如果命令行失败，停止部署</span>
-<span class="nb">set</span> -e
-<span class="nb">printf</span> <span class="s2">&#34;\033[0;32mDeploying updates to GitHub...\033[0m\n&#34;</span>
-hugo
-   
-<span class="c1"># 更新上述中blog代码仓</span>
-git add .
-<span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;rebuilding site </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&#34;</span>
-<span class="k">if</span> <span class="o">[</span> -n <span class="s2">&#34;</span><span class="nv">$*</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
- <span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$*</span><span class="s2">&#34;</span>
-<span class="k">fi</span>
-git commit -m <span class="s2">&#34;</span><span class="nv">$msg</span><span class="s2">&#34;</span>
-git push origin master
-   
-<span class="c1"># 更新上述中&lt;userName&gt;.github.io代码仓</span>
-<span class="nb">cd</span> public
-git add .
-<span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;rebuilding site </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&#34;</span>
-<span class="k">if</span> <span class="o">[</span> -n <span class="s2">&#34;</span><span class="nv">$*</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
- <span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$*</span><span class="s2">&#34;</span>
-<span class="k">fi</span>
-git commit -m <span class="s2">&#34;</span><span class="nv">$msg</span><span class="s2">&#34;</span>
-git push origin master
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">A</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="nf">A</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">B</span><span class="o">.</span><span class="na">getInstance</span><span class="o">().</span><span class="na">setA</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+
+<span class="c1">//B类采用单例模式
+</span><span class="c1"></span><span class="kd">class</span> <span class="nc">B</span><span class="o">{</span>
+    <span class="kd">private</span> <span class="n">A</span> <span class="n">a</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="n">B</span> <span class="n">instance</span> <span class="o">=</span> <span class="k">new</span> <span class="n">B</span><span class="o">();</span>
+    
+    <span class="kd">public</span> <span class="nf">B</span><span class="o">(){}</span>
+    
+    <span class="kd">public</span> <span class="kd">static</span> <span class="n">B</span> <span class="nf">getInstance</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">instance</span><span class="o">;</span>
+    <span class="o">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setA</span><span class="o">(</span><span class="n">A</span> <span class="n">a</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">a</span> <span class="o">=</span> <span class="n">a</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">A</span> <span class="nf">getA</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">a</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><ol start="2">
-<li><code>chmod +x deploy.sh</code></li>
-<li><code>./deploy.sh &quot;你的commit信息&quot;</code></li>
-</ol>
-</li>
-</ol>
-</div><div class="post-footer" id="post-footer">
+</div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2020-07-16</span>
+                <span>更新于 2020-07-22</span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/hugotogithub/index.md" target="_blank">阅读原始文档</a>
+                            <a class="link-to-markdown" href="/interview/index.md" target="_blank">阅读原始文档</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://duanlianjie.github.io/hugotogithub/" data-title="将Hugo生成的静态网页部署到Github" data-hashtags="Hugo"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://duanlianjie.github.io/hugotogithub/" data-hashtag="Hugo"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Linkedin" data-sharer="linkedin" data-url="https://duanlianjie.github.io/hugotogithub/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://duanlianjie.github.io/hugotogithub/" data-title="将Hugo生成的静态网页部署到Github"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 百度" data-sharer="baidu" data-url="https://duanlianjie.github.io/hugotogithub/" data-title="将Hugo生成的静态网页部署到Github"><i data-svg-src="/lib/simple-icons/icons/baidu.min.svg"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://duanlianjie.github.io/interview/" data-title="面试题" data-hashtags="面试"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://duanlianjie.github.io/interview/" data-hashtag="面试"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Linkedin" data-sharer="linkedin" data-url="https://duanlianjie.github.io/interview/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://duanlianjie.github.io/interview/" data-title="面试题"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 百度" data-sharer="baidu" data-url="https://duanlianjie.github.io/interview/" data-title="面试题"><i data-svg-src="/lib/simple-icons/icons/baidu.min.svg"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/hugo/">Hugo</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E9%9D%A2%E8%AF%95/">面试</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/first/" class="prev" rel="prev" title="我的第一篇文章"><i class="fas fa-angle-left fa-fw"></i>我的第一篇文章</a>
-            <a href="/hugotoserver/" class="next" rel="next" title="将Hugo生成的静态网页部署到云服务器">将Hugo生成的静态网页部署到云服务器<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/hugomarkdown/" class="prev" rel="prev" title="Hugo中Markdown转网页的一些注意事项"><i class="fas fa-angle-left fa-fw"></i>Hugo中Markdown转网页的一些注意事项</a>
+            <a href="/linux/" class="next" rel="next" title="Linux">Linux<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
