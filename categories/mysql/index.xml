@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>MySQL - 分类 - 段连杰</title>
+        <link>https://duanlianjie.github.io/categories/mysql/</link>
+        <description>MySQL - 分类 - 段连杰</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>duanlianjie1999@qq.com (段连杰)</managingEditor>
+            <webMaster>duanlianjie1999@qq.com (段连杰)</webMaster><lastBuildDate>Sun, 09 Aug 2020 10:00:44 &#43;0800</lastBuildDate><atom:link href="https://duanlianjie.github.io/categories/mysql/" rel="self" type="application/rss+xml" /><item>
+    <title>MySQL SOURCE 导入脚本时 Error: Failed to open file，error: 2</title>
+    <link>https://duanlianjie.github.io/mysqlsourceerror2/</link>
+    <pubDate>Sun, 09 Aug 2020 10:00:44 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://duanlianjie.github.io/mysqlsourceerror2/</guid>
+    <description><![CDATA[[TOC] MySQL SOURCE 导入脚本时 Error: Failed to open file，error: 2 路径使用绝对路径 路径不要含有中文 路径不需要加任何引号 Windows下使用正斜杠 “/”]]></description>
+</item><item>
+    <title>MySQL 8.0 安装步骤</title>
+    <link>https://duanlianjie.github.io/mysql/</link>
+    <pubDate>Thu, 16 Jul 2020 23:16:14 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://duanlianjie.github.io/mysql/</guid>
+    <description><![CDATA[[TOC] MySQL 8.0 安装步骤 MSI安装方式 1. 下载MSI文件 百度百科：MSI文件是Windows Installer的数据包，它实际上是一个数据库，包含安装一]]></description>
+</item></channel>
+</rss>

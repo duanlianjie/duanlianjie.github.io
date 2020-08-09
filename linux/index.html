@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Linux - 段连杰</title><meta name="Description" content="段连杰"><meta property="og:title" content="Linux" />
-<meta property="og:description" content="[TOC] 第4章 基础篇 Linux的目录结构 4.1 基本介绍 linux的文件系统是采用级层式的树状目录结构，在此结构中的最上层是根目录“/”，然后在此目录下" />
+<meta property="og:description" content="[TOC] 第 1 章 开山篇 Linux 学习介绍 1.1 Linux 的学习方向 Linux 运维工程师 Linux 嵌入式开发工程师 在 Linux 下做各种程序开发 1.2 Linux 的应用领域 1.2.1 个人桌面应用领域 传统 linux 应用最薄弱的环" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://duanlianjie.github.io/linux/" />
 <meta property="og:image" content="https://duanlianjie.github.io/47"/>
@@ -16,11 +16,11 @@
 <meta name="twitter:image" content="https://duanlianjie.github.io/47"/>
 
 <meta name="twitter:title" content="Linux"/>
-<meta name="twitter:description" content="[TOC] 第4章 基础篇 Linux的目录结构 4.1 基本介绍 linux的文件系统是采用级层式的树状目录结构，在此结构中的最上层是根目录“/”，然后在此目录下"/>
+<meta name="twitter:description" content="[TOC] 第 1 章 开山篇 Linux 学习介绍 1.1 Linux 的学习方向 Linux 运维工程师 Linux 嵌入式开发工程师 在 Linux 下做各种程序开发 1.2 Linux 的应用领域 1.2.1 个人桌面应用领域 传统 linux 应用最薄弱的环"/>
 <meta name="application-name" content="段连杰">
 <meta name="apple-mobile-web-app-title" content="段连杰"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://duanlianjie.github.io/linux/" /><link rel="prev" href="https://duanlianjie.github.io/interview/" /><link rel="next" href="https://duanlianjie.github.io/github/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://duanlianjie.github.io/linux/" /><link rel="prev" href="https://duanlianjie.github.io/interview/" /><link rel="next" href="https://duanlianjie.github.io/spring/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/duanlianjie.github.io\/linux\/"
-        },"genre": "posts","keywords": "Linux","wordcount":  2352 ,
+        },"genre": "posts","keywords": "Linux","wordcount":  7675 ,
         "url": "https:\/\/duanlianjie.github.io\/linux\/","datePublished": "2020-07-24T20:44:29+08:00","dateModified": "2020-07-24T20:44:29+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -106,8 +106,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Linux</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>段连杰</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-07-24">2020-07-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2352 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 5 分钟&nbsp;<span id="/linux/" class="leancloud_visitors" data-flag-title="Linux">
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-07-24">2020-07-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 7675 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 16 分钟&nbsp;<span id="/linux/" class="leancloud_visitors" data-flag-title="Linux">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
@@ -117,8 +117,45 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
+    <li><a href="#11-linux-的学习方向">1.1 Linux 的学习方向</a></li>
+    <li><a href="#12-linux-的应用领域">1.2 Linux 的应用领域</a>
+      <ul>
+        <li><a href="#121-个人桌面应用领域">1.2.1 个人桌面应用领域</a></li>
+        <li><a href="#122-服务器应用领域">1.2.2 服务器应用领域</a></li>
+        <li><a href="#123-嵌入式应用领域">1.2.3 嵌入式应用领域</a></li>
+      </ul>
+    </li>
+    <li><a href="#13-学习-linux-的阶段">1.3 学习 Linux 的阶段</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-linux-介绍">2.1 Linux 介绍</a></li>
+    <li><a href="#22-unix-gnu-linux的关系">2.2 UNIX GNU Linux的关系</a></li>
+    <li><a href="#23-linux和windows比较">2.3 Linux和Windows比较</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31-安装-vm-和-centos">3.1 安装 vm 和 Centos</a></li>
+    <li><a href="#32-vm-安装的步骤">3.2 VM 安装的步骤</a></li>
+    <li><a href="#33-centos-安装的步骤">3.3 CentOS 安装的步骤</a></li>
+    <li><a href="#34-vmtools-安装">3.4 vmtools 安装</a>
+      <ul>
+        <li><a href="#361-介绍">3.6.1 介绍</a></li>
+        <li><a href="#362-安装-vmtools-的步骤">3.6.2 安装 vmtools 的步骤</a></li>
+        <li><a href="#363-使用-vmtools-来设置-windows-和-linux-的共享文件夹">3.6.3 使用 vmtools 来设置 windows 和 linux 的共享文件夹</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
     <li><a href="#41-基本介绍">4.1 基本介绍</a></li>
     <li><a href="#42-目录结构的具体介绍">4.2 目录结构的具体介绍</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#51-为什么需要远程登录-linux">5.1 为什么需要远程登录 Linux</a></li>
+    <li><a href="#52-远程登录-xshell">5.2 远程登录 Xshell</a></li>
+    <li><a href="#53-远程上传下载文件-xftp">5.3 远程上传下载文件 Xftp</a></li>
   </ul>
 
   <ul>
@@ -136,8 +173,36 @@
 
   <ul>
     <li><a href="#81-基本介绍">8.1 基本介绍</a></li>
-    <li><a href="#82-用户相关基本指令">8.2 用户相关基本指令</a></li>
+    <li><a href="#82-用户相关基本指令">8.2 用户相关基本指令</a>
+      <ul>
+        <li><a href="#821-su-和-su---的区别">8.2.1 su 和 su - 的区别</a></li>
+        <li><a href="#821-su-和-sudo-的区别">8.2.1 su 和 sudo 的区别</a></li>
+      </ul>
+    </li>
     <li><a href="#83-用户组相关指令">8.3 用户组相关指令</a></li>
+    <li><a href="#84-用户和用户组配置文件">8.4 用户和用户组配置文件</a>
+      <ul>
+        <li><a href="#841-etcpasswd-文件">8.4.1 /etc/passwd 文件</a></li>
+        <li><a href="#842-etcshadow-文件">8.4.2 /etc/shadow 文件</a></li>
+        <li><a href="#843-etcgroup-文件">8.4.3 /etc/group 文件</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#91-运行级别">9.1 运行级别</a>
+      <ul>
+        <li><a href="#911-system-v">9.1.1 System V</a></li>
+        <li><a href="#912-systemd">9.1.2 systemd</a></li>
+      </ul>
+    </li>
+    <li><a href="#92-运行级别相关指令">9.2 运行级别相关指令</a>
+      <ul>
+        <li><a href="#921-找回root密码">9.2.1 找回root密码</a></li>
+      </ul>
+    </li>
+    <li><a href="#93-帮助指令">9.3 帮助指令</a></li>
+    <li><a href="#94-文件目录类">9.4 文件目录类</a></li>
   </ul>
 
   <ul>
@@ -146,6 +211,7 @@
   </ul>
 
   <ul>
+    <li><a href="#141-进程的基本介绍">14.1 进程的基本介绍</a></li>
     <li><a href="#145-服务管理-">14.5 服务管理 *</a></li>
   </ul>
 
@@ -153,9 +219,147 @@
     <li><a href="#预定义变量">预定义变量</a></li>
     <li><a href="#自定义函数">自定义函数</a></li>
   </ul>
+
+  <ul>
+    <li><a href="#181-ubuntu-的介绍">18.1 Ubuntu 的介绍</a></li>
+    <li><a href="#182-ubuntu-的安装">18.2 Ubuntu 的安装</a>
+      <ul>
+        <li><a href="#1821-安装的步骤">18.2.1 安装的步骤</a></li>
+        <li><a href="#1822-设置语言和输入源">18.2.2 设置语言和输入源</a></li>
+      </ul>
+    </li>
+    <li><a href="#183-ubuntu-的-root-用户">18.3 Ubuntu 的 root 用户</a>
+      <ul>
+        <li><a href="#1831-介绍">18.3.1 介绍</a></li>
+        <li><a href="#1832-给-root-用户设置密码并使用">18.3.2 给 root 用户设置密码并使用</a></li>
+      </ul>
+    </li>
+    <li><a href="#184-ubuntu-下开发-python">18.4 Ubuntu 下开发 Python</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#191-apt-介绍">19.1 apt 介绍</a></li>
+    <li><a href="#192-ubuntu-软件操作的相关命令">19.2 Ubuntu 软件操作的相关命令</a></li>
+    <li><a href="#193-更新-ubuntu-软件下载地址">19.3 更新 Ubuntu 软件下载地址</a>
+      <ul>
+        <li><a href="#1931-原理示意图">19.3.1 原理示意图</a></li>
+        <li><a href="#1932-寻找国内镜像源">19.3.2 寻找国内镜像源</a></li>
+        <li><a href="#1933-备份-ubuntu-默认的源地址">19.3.3 备份 Ubuntu 默认的源地址</a></li>
+        <li><a href="#1934-更新源服务器列表">19.3.4 更新源服务器列表</a></li>
+      </ul>
+    </li>
+    <li><a href="#195-使用-ssh-远程登录-ubuntu">19.5 使用 SSH 远程登录 Ubuntu</a>
+      <ul>
+        <li><a href="#1951-ssh-介绍">19.5.1 SSH 介绍</a></li>
+        <li><a href="#1951-安装-ssh-和启用">19.5.1 安装 SSH 和启用</a></li>
+      </ul>
+    </li>
+    <li><a href="#196-ubuntu-注意问题">19.6 Ubuntu 注意问题</a></li>
+  </ul>
 </nav></div>
             </div><div class="content" id="content"><p>[TOC]</p>
-<h1 id="第4章-基础篇-linux的目录结构">第4章 基础篇 Linux的目录结构</h1>
+<h1 id="第-1-章-开山篇-linux-学习介绍">第 1 章 开山篇 Linux 学习介绍</h1>
+<h2 id="11-linux-的学习方向">1.1 Linux 的学习方向</h2>
+<ul>
+<li>Linux 运维工程师</li>
+<li>Linux 嵌入式开发工程师</li>
+<li>在 Linux 下做各种程序开发</li>
+</ul>
+<h2 id="12-linux-的应用领域">1.2 Linux 的应用领域</h2>
+<h3 id="121-个人桌面应用领域">1.2.1 个人桌面应用领域</h3>
+<ul>
+<li>传统 linux 应用最薄弱的环节。
+<ul>
+<li>传统 linux 由于界面简单、操作复杂、应用软件少的缺点， 一直被 windows 所压制，但近些年来随着 ubuntu、fedora 等优秀桌面环境的兴起，同时各大硬件厂商对其支持的加大，linux 在个人桌面领域的占有率在逐渐的提高。</li>
+</ul>
+</li>
+</ul>
+<h3 id="122-服务器应用领域">1.2.2 服务器应用领域</h3>
+<ul>
+<li>linux 在服务器领域的应用是最强的。
+<ul>
+<li>linux 免费、稳定、高效等特点在这里得到了很好的体现，近些年来 linux 服务器市场得到了飞速的提升，尤其在一些高端领域尤为广泛。</li>
+</ul>
+</li>
+</ul>
+<h3 id="123-嵌入式应用领域">1.2.3 嵌入式应用领域</h3>
+<ul>
+<li>近些年来 linux 在嵌入式领域的应用得到了飞速的提高
+<ul>
+<li>linux 运行稳定、对网络的良好支持性、低成本，且可以根据需要进行软件裁剪，内核最小可以达到几百 KB 等特点，使其近些年来在嵌入式领域的应用得到非常大的提高。</li>
+<li>主要应用：机顶盒、数字电视、网络电话、程控交换机、手机、PDA、智能家居、智能硬件等都 是其应用领域。以后再物联网中应用会更加广泛。</li>
+</ul>
+</li>
+</ul>
+<h2 id="13-学习-linux-的阶段">1.3 学习 Linux 的阶段</h2>
+<ul>
+<li>第 1 阶段：linux 环境下的基本操作命令，包括文件操作命令(rm mkdir chmod, chown)，编辑工具使用（vi vim），linux 用户管理(useradd userdel usermod)等。</li>
+<li>第 2 阶段：linux 的各种配置（环境变量配置，网络配置，服务配置）。</li>
+<li>第 3 阶段：linux 下如何搭建对应语言的开发环境（大数据，JavaEE, Python 等）。</li>
+<li>第 4 阶段：能编写 shell 脚本，对 Linux 服务器进行维护。</li>
+<li>第 5 阶段：能进行安全设置，防止攻击，保障服务器正常运行，能对系统调优。</li>
+<li>第 6 阶段：深入理解 Linux 系统（对内核有研究），熟练掌握大型网站应用架构组成、并熟悉各个环节的部署和维护方法。</li>
+</ul>
+<h1 id="第-2-章-基础篇-linux-入门">第 2 章 基础篇 Linux 入门</h1>
+<h2 id="21-linux-介绍">2.1 Linux 介绍</h2>
+<p>(1) Linux 是一款操作系统，免费，开源，安全，高效，稳定，处理高并发非常强悍，现在很多的企业级的项目都部署到 Linux/Unix 服务器运行。</p>
+<p>(2) Linux 创始人</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="images/image-20200801232939918.png"
+        data-srcset="/linux/images/image-20200801232939918.png, images/image-20200801232939918.png 1.5x, /linux/images/image-20200801232939918.png 2x"
+        data-sizes="auto"
+        alt="/linux/images/image-20200801232939918.png"
+        title="image-20200801232939918" /></p>
+<p>(3) Linux 的主要的发行版</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="images/image-20200801233234653.png"
+        data-srcset="/linux/images/image-20200801233234653.png, images/image-20200801233234653.png 1.5x, /linux/images/image-20200801233234653.png 2x"
+        data-sizes="auto"
+        alt="/linux/images/image-20200801233234653.png"
+        title="image-20200801233234653" /></p>
+<h2 id="22-unix-gnu-linux的关系">2.2 UNIX GNU Linux的关系</h2>
+<h2 id="23-linux和windows比较">2.3 Linux和Windows比较</h2>
+<h1 id="第-3-章-基础篇-vm-和-linux-系统centos安装">第 3 章 基础篇 VM 和 Linux 系统(CentOS)安装</h1>
+<h2 id="31-安装-vm-和-centos">3.1 安装 vm 和 Centos</h2>
+<h2 id="32-vm-安装的步骤">3.2 VM 安装的步骤</h2>
+<p>（1） 去 BIOS 里修改设置开启虚拟化设备支持（f2, f10）</p>
+<p>（2）安装虚拟机软件</p>
+<h2 id="33-centos-安装的步骤">3.3 CentOS 安装的步骤</h2>
+<ul>
+<li>网络连接模式
+<ul>
+<li>
+<p>桥连接：Linux 可以和其它的系统通信，但是可能造成ip冲突</p>
+</li>
+<li>
+<p>NAT：网络地址转换方式，linux可以访问外网，不会造成ip冲突</p>
+</li>
+<li>
+<p>主机模式：你的 linux 是一个独立的主机，不能访问外网</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="34-vmtools-安装">3.4 vmtools 安装</h2>
+<h3 id="361-介绍">3.6.1 介绍</h3>
+<p>1)可以直接粘贴命令在 windows 和 centos 系统之间</p>
+<p>2)可以设置 windows 和 centos 的共享文件夹</p>
+<h3 id="362-安装-vmtools-的步骤">3.6.2 安装 vmtools 的步骤</h3>
+<p>1.进入 centos</p>
+<p>2.点击 vm 菜单的-&gt;install vmware tools</p>
+<p>3.centos 会出现一个 vm 的安装包</p>
+<p>4.点击右键解压, 得到一个安装文件</p>
+<p>5.进入该 vm 解压的目录 ，该文件在 /root/桌面/vmware-tools-distrib/下</p>
+<p>6.安装 ./vmware-install.pl</p>
+<p>7.全部使用默认设置即可</p>
+<p>8.需要 reboot 重新启动即可生效</p>
+<h3 id="363-使用-vmtools-来设置-windows-和-linux-的共享文件夹">3.6.3 使用 vmtools 来设置 windows 和 linux 的共享文件夹</h3>
+<p>虚拟机-&gt;设置-&gt;选项-&gt;共享文件夹</p>
+<h1 id="第-4-章-基础篇-linux-的目录结构">第 4 章 基础篇 Linux 的目录结构</h1>
 <h2 id="41-基本介绍">4.1 基本介绍</h2>
 <ul>
 <li>linux的文件系统是采用级层式的树状目录结构，在此结构中的最上层是根目录“/”，然后在此目录下再创建其他的目录。</li>
@@ -174,6 +378,11 @@
 <li><strong>/bin</strong>(/usr/bin 、 /usr/local/bin)
 <ul>
 <li>是Binary的缩写, 这个目录存放着最经常使用的命令。</li>
+</ul>
+</li>
+<li>/sbin (/usr/sbin 、 /usr/local/sbin)
+<ul>
+<li>s就是Super User的意思，这里存放的是系统管理员使用的系统管理程序。</li>
 </ul>
 </li>
 <li><strong>/home</strong>
@@ -218,7 +427,7 @@
 </li>
 <li><strong>/usr/local</strong>
 <ul>
-<li>这是另一个给主机额外安装软件所<strong>安装的目录</strong>。一般是通过编译源码方式安装的程序。</li>
+<li>这是给主机额外安装软件所<strong>安装的目录</strong>。一般是通过编译源码方式安装的程序。</li>
 </ul>
 </li>
 <li><strong>/var</strong>
@@ -241,14 +450,9 @@
 <li>这个目录是用来存放一些临时文件的。</li>
 </ul>
 </li>
-<li>/sbin (/usr/sbin 、 /usr/local/sbin)
-<ul>
-<li>s就是Super User的意思，这里存放的是系统管理员使用的系统管理程序。</li>
-</ul>
-</li>
 <li>/lib
 <ul>
-<li>系统开机所需要最基本的动态连接共享库，其作用类似于Windows里的DLL文件。几 乎所有的应用程序都需要用到这些共享库。</li>
+<li>系统开机所需要最基本的动态连接共享库，其作用类似于Windows里的DLL文件。几乎所有的应用程序都需要用到这些共享库。</li>
 </ul>
 </li>
 <li>/lost+found
@@ -272,7 +476,20 @@
 </ul>
 </li>
 </ul>
-<h1 id="第6章-实操篇-vi和vim编辑器">第6章 实操篇 vi和vim编辑器</h1>
+<h1 id="第-5-章-实操篇-远程登录-linux-系统">第 5 章 实操篇 远程登录 Linux 系统</h1>
+<h2 id="51-为什么需要远程登录-linux">5.1 为什么需要远程登录 Linux</h2>
+<ul>
+<li>公司开发时候， 具体的情况是这样的：
+<ul>
+<li>linux 服务器是开发小组共享的，正式上线的项目是运行在公网的，因此程序员需要远程登录到 centos 进行项目管理或者开发</li>
+</ul>
+</li>
+</ul>
+<h2 id="52-远程登录-xshell">5.2 远程登录 Xshell</h2>
+<p>Xshell是一个强大的安全终端模拟软件，它支持 SSH1, SSH2, 以及 Microsoft Windows 平台的 TELNET 协议。</p>
+<p><strong>特别说明</strong>：如果希望安装好 XShell就可以远程访问 Linux 系统的话，需要有一个前提，就是 Linux 启用了 SSHD 服务，该服务会监听 22 号端口。</p>
+<h2 id="53-远程上传下载文件-xftp">5.3 远程上传下载文件 Xftp</h2>
+<h1 id="第-6-章-实操篇-vi-和-vim-编辑器">第 6 章 实操篇 vi 和 vim 编辑器</h1>
 <h2 id="61-vi和vim的基本介绍">6.1 vi和vim的基本介绍</h2>
 <p>所有的 Linux 系统都会内建 vi 文本编辑器。</p>
 <p>vim 具有程序编辑的能力，可以看做是 <strong>vi 的增强版本</strong>，可以主动的以字体颜色辨别语法的正确性，方便程序设计、代码补全、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。</p>
@@ -281,7 +498,7 @@
 <li>正常模式
 <ul>
 <li>在该模式下，可以使用快捷键。</li>
-<li>以 vim 打开一个档案就直接进入正常模式了(这是默认的模式)。在这个模式中，你可以使用『上 下左右』按键来移动光标，你可以使用『删除字符』或『删除整行』来处理档案内容， 也可以使用 『复制、粘贴』来处理你的文件数据。</li>
+<li>以 vim 打开一个档案就直接进入正常模式了(这是<strong>默认的模式</strong>)。在这个模式中，你可以使用『上下左右』按键来移动光标，你可以使用『删除字符』或『删除整行』来处理档案内容， 也可以使用 『复制、粘贴』来处理你的文件数据。</li>
 </ul>
 </li>
 <li>编辑模式 / 插入模式
@@ -324,6 +541,11 @@
 <li>shift+g</li>
 </ul>
 </li>
+<li>在文件中查找某个单词：/关键字
+<ul>
+<li>输入 n 就是查找下一个</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
@@ -339,7 +561,7 @@
 <p>q：没有修改才能退出</p>
 </li>
 <li>
-<p>在文件中查找某个单词：[:]/关键字</p>
+<p>在文件中查找某个单词：:/关键字</p>
 <ul>
 <li>输入 n 就是查找下一个</li>
 </ul>
@@ -359,23 +581,30 @@
         data-sizes="auto"
         alt="/linux/images/image-20200724230716228.png"
         title="image-20200724230716228" /></p>
-<h1 id="第7章-实操篇-开机重启和用户登录注销">第7章 实操篇 开机、重启和用户登录注销</h1>
+<h1 id="第-7-章-实操篇-开机重启和用户登录注销">第 7 章 实操篇 开机、重启和用户登录注销</h1>
 <h2 id="71-关机和重启">7.1 关机和重启</h2>
 <ul>
-<li>shutdown
+<li>
+<p>shutdown</p>
 <ul>
 <li>shutdown -h now : 立即关机</li>
 <li>shutdown -h 1 : 1 分钟后关机</li>
 <li>shutdown -r now : 立即重启</li>
 </ul>
 </li>
-<li>halt 就是直接使用，效果等价于关机</li>
-<li>reboot 就是重启系统</li>
-<li>sync ： 把内存的数据同步到磁盘</li>
+<li>
+<p>halt 就是直接使用，效果等价于关机</p>
+</li>
+<li>
+<p>reboot 就是重启系统</p>
+</li>
+<li>
+<p>sync ： 把内存的数据同步到磁盘</p>
+<ul>
+<li>当我们关机或者重启时，都应该先执行以下 sync 指令，把内存的数据写入磁盘，防止数据丢失。</li>
 </ul>
-<blockquote>
-<p>当我们关机或者重启时，都应该先执行以下 sync 指令，把内存的数据写入磁盘，防止数据丢失。</p>
-</blockquote>
+</li>
+</ul>
 <h2 id="72-用户登录和注销">7.2 用户登录和注销</h2>
 <ul>
 <li>注销用户：logout
@@ -383,9 +612,13 @@
 <li>logout 注销指令在图形运行级别无效，在运行级别 3 下有效</li>
 </ul>
 </li>
-<li>切换身份：su - 用户名</li>
+<li>切换身份：su - 用户名
+<ul>
+<li>切换root：su - [root]</li>
 </ul>
-<h1 id="第8章-实操篇-用户管理">第8章 实操篇 用户管理</h1>
+</li>
+</ul>
+<h1 id="第-8-章-实操篇-用户管理">第 8 章 实操篇 用户管理</h1>
 <h2 id="81-基本介绍">8.1 基本介绍</h2>
 <ul>
 <li>
@@ -397,72 +630,360 @@
 </ul>
 <h2 id="82-用户相关基本指令">8.2 用户相关基本指令</h2>
 <ul>
-<li>添加用户
+<li>useradd 用户名
 <ul>
-<li>useradd 用户名</li>
+<li>添加用户</li>
+<li>Ubuntu 20.04 LTS不会自动创建家目录，Cent OS 7会自动创建家目录</li>
 </ul>
 </li>
-<li>添加用户并指定家目录，家目录需要未创建
+<li>useradd -d 目录 用户名
 <ul>
-<li>useradd -d 目录 用户名</li>
+<li>添加用户并指定家目录，家目录需要未创建</li>
 </ul>
 </li>
-<li>删除用户
+<li>userdel 用户名
 <ul>
-<li>userdel 用户名</li>
+<li>删除用户</li>
 </ul>
 </li>
-<li>删除用户以及家目录
+<li>userdel -r 用户名
 <ul>
-<li>userdel -r 用户名</li>
+<li>删除用户以及家目录</li>
 </ul>
 </li>
-<li>指定或修改密码
+<li>passwd 用户名
 <ul>
-<li>passwd 用户名</li>
+<li>指定或修改密码</li>
 </ul>
 </li>
-<li>查询用户信息
+<li>id 用户名
 <ul>
-<li>id 用户名</li>
+<li>查询用户信息</li>
 <li>用户id 组id 组名：uid=1000(duanlianjie) gid=1000(duanlianjie) groups=1000(duanlianjie)</li>
 </ul>
 </li>
-<li>切换用户
+<li>su 用户名
 <ul>
-<li>su - 用户名</li>
+<li>不改变当前变量，只能使用exit退回</li>
 </ul>
 </li>
-<li>退回到原用户
+<li>su - 用户名
 <ul>
-<li>exit</li>
+<li>改变为切换到用户的变量，可以使用logout退回</li>
 </ul>
 </li>
+<li>exit
+<ul>
+<li>退回到原用户</li>
+</ul>
+</li>
+</ul>
+<h3 id="821-su-和-su---的区别">8.2.1 su 和 su - 的区别</h3>
+<ul>
+<li>duanlianjie 登录</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="images/image-20200807193707193.png"
+        data-srcset="/linux/images/image-20200807193707193.png, images/image-20200807193707193.png 1.5x, /linux/images/image-20200807193707193.png 2x"
+        data-sizes="auto"
+        alt="/linux/images/image-20200807193707193.png"
+        title="image-20200807193707193" /></p>
+<ul>
+<li>su 切换
+<ul>
+<li>su 只能获得root的执行权限，不能获得环境变量</li>
+</ul>
+</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="images/image-20200807193756455.png"
+        data-srcset="/linux/images/image-20200807193756455.png, images/image-20200807193756455.png 1.5x, /linux/images/image-20200807193756455.png 2x"
+        data-sizes="auto"
+        alt="/linux/images/image-20200807193756455.png"
+        title="image-20200807193756455" /></p>
+<ul>
+<li>su - 切换
+<ul>
+<li>su - 切换到root并获得root的环境变量及执行权限</li>
+<li>“-” 会进入一个login shell，即和该用户登录的情况完全一样</li>
+</ul>
+</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="images/image-20200807193951922.png"
+        data-srcset="/linux/images/image-20200807193951922.png, images/image-20200807193951922.png 1.5x, /linux/images/image-20200807193951922.png 2x"
+        data-sizes="auto"
+        alt="/linux/images/image-20200807193951922.png"
+        title="image-20200807193951922" /></p>
+<h3 id="821-su-和-sudo-的区别">8.2.1 su 和 sudo 的区别</h3>
+<ul>
+<li>sudo
+<ul>
+<li>通过 sudo，能把某些超级权限有针对性的下放，并且不需要普通用户知道 root 密码，所以 sudo 相对于权限无限制性的 su 来说，还是比较安全的。</li>
+<li>所以 sudo 也能被称为受限制的su；另外 sudo 是需要授权许可的，所以也被称为授权许可的su。</li>
+<li>sudo 执行命令的流程是当前用户切换到 root（或其它指定切换到的用户），然后以 root（或其它指定的切换到的用户）身份执行命令，执行完成后，直接退回到当前用户；而这些的前提是要通过sudo的配置文件/etc/sudoers来进行授权。</li>
+<li>特性
+<ul>
+<li>sudo 能够限制用户只在某台主机上运行某些命令。</li>
+<li>sudo 提供了丰富的日志，详细地记录了每个用户干了什么。它能够将日志传到中心主机或者日志服务器。</li>
+<li>sudo 使用时间戳文件来执行类似的“检票”系统。当用户调用sudo并且输入它的密码时，用户获得了一张存活期为5分钟的票（这个值可以在编译的时候改变）。</li>
+<li>sudo 的配置文件是 sudoers 文件，它允许系统管理员集中的管理用户的使用权限和使用的主机。它所存放的位置默认是在 /etc/sudoers，属性必须为0411。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>密码：
+<ul>
+<li>sudo 命令需要输入当前用户的密码，su 命令需要输入 root 用户的密码。</li>
+</ul>
+</li>
+<li>默认行为：
+<ul>
+<li>sudo 命令只允许使用提升的权限运行单个命令，而 su 命令会启动一个新的 shell，同时允许使用 root 权限运行尽可能多的命令，直到明确退出登录。</li>
+</ul>
+</li>
+<li>日志记录
+<ul>
+<li>sudo 命令是以目标用户（默认情况下是 root 用户）的身份执行命令，但是它们会使用 sudoer 所配置的用户名来记录是谁执行命令。而 su 命令是无法直接跟踪记录用户切换到 root 用户之后执行了什么操作。</li>
+</ul>
+</li>
+<li>灵活性
+<ul>
+<li>sudo 命令比 su 命令灵活很多，因为你甚至可以限制 sudo 用户可以访问哪些命令。换句话说，用户通过 sudo 命令只能访问他们工作需要的命令。而 su 命令让用户有权限做任何事情。</li>
+</ul>
+</li>
+<li>使用 su 命令或直接以 root 用户身份登录有风险，所以一些 Linux 发行版（如 Ubuntu）默认禁用 root 用户帐户。鼓励用户在需要 root 权限时使用 sudo 命令。</li>
 </ul>
 <h2 id="83-用户组相关指令">8.3 用户组相关指令</h2>
 <ul>
-<li>
-<p>添加组</p>
-<ul>
 <li>groupadd 组名</li>
-</ul>
-</li>
-<li>
-<p>删除组</p>
-<ul>
+<li>添加组</li>
 <li>groupdel 组名</li>
+<li>删除组</li>
+<li>useradd -g 用户组 用户名
+<ul>
+<li>添加用户并指定组</li>
 </ul>
 </li>
-<li>
-<p>添加用户并指定组</p>
+<li>usermod -g 用户组 用户名
 <ul>
-<li>useradd -g 用户组 用户名</li>
+<li>修改用户的组</li>
 </ul>
 </li>
-<li>
-<p>ls -lh /home</p>
+</ul>
+<h2 id="84-用户和用户组配置文件">8.4 用户和用户组配置文件</h2>
+<h3 id="841-etcpasswd-文件">8.4.1 /etc/passwd 文件</h3>
 <ul>
-<li>h：human</li>
+<li>用户的配置文件，记录用户的各种信息</li>
+<li>每行的含义：用户名:口令:用户标识号:组标识号:注释性描述:主目录:登录 Shell</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="images/image-20200807200801470.png"
+        data-srcset="/linux/images/image-20200807200801470.png, images/image-20200807200801470.png 1.5x, /linux/images/image-20200807200801470.png 2x"
+        data-sizes="auto"
+        alt="/linux/images/image-20200807200801470.png"
+        title="image-20200807200801470" /></p>
+<h3 id="842-etcshadow-文件">8.4.2 /etc/shadow 文件</h3>
+<ul>
+<li>口令的配置文件</li>
+<li>每行的含义：登录名:加密口令:最后一次修改时间:最小时间间隔:最大时间间隔:警告时间:不活动时间:失效时间:标志</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="images/image-20200807200934602.png"
+        data-srcset="/linux/images/image-20200807200934602.png, images/image-20200807200934602.png 1.5x, /linux/images/image-20200807200934602.png 2x"
+        data-sizes="auto"
+        alt="/linux/images/image-20200807200934602.png"
+        title="image-20200807200934602" /></p>
+<h3 id="843-etcgroup-文件">8.4.3 /etc/group 文件</h3>
+<ul>
+<li>组(group)的配置文件，记录 Linux 包含的组的信息</li>
+<li>每行的含义：组名:口令:组标识号:组内用户列表</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="images/image-20200807201044693.png"
+        data-srcset="/linux/images/image-20200807201044693.png, images/image-20200807201044693.png 1.5x, /linux/images/image-20200807201044693.png 2x"
+        data-sizes="auto"
+        alt="/linux/images/image-20200807201044693.png"
+        title="image-20200807201044693" /></p>
+<h1 id="第-9-章-实操篇-实用指令">第 9 章 实操篇 实用指令</h1>
+<h2 id="91-运行级别">9.1 运行级别</h2>
+<ul>
+<li>
+<p><strong>init</strong>（为英语：initialization的简写）是 Unix 和 类Unix 系统中用来产生其它所有进程的程序。它以守护进程的方式存在，其进程号为1。</p>
+</li>
+<li>
+<p>Linux系统在引导时加载Linux内核后，便由Linux内核加载init程序，由init程序完成余下的引导过程，比如加载运行级别，加载服务，引导Shell/图形化界面等等。</p>
+</li>
+<li>
+<p>init的发展变化</p>
+<ul>
+<li>System V
+<ul>
+<li>System V init检查 &lsquo;/etc/inittab&rsquo; 文件中是否含有 &lsquo;initdefault&rsquo; 项。这告诉init系统是否有一个默认运行模式。如果没有默认的运行模式，那么用户将进入系统控制台，手动决定进入何种运行模式。</li>
+</ul>
+</li>
+<li>Upstart
+<ul>
+<li>完全代替 init ，可以异步开启进程，曾由Ubuntu等使用</li>
+</ul>
+</li>
+<li>systemd
+<ul>
+<li>完全替代init，可并行启动服务，并能减少在shell上的系统开销，相比传统的System V是一大革新，已被大多数Linux发行版所使用</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="911-system-v">9.1.1 System V</h3>
+<ul>
+<li>运行级别说明：
+<ul>
+<li>0：关机</li>
+<li>1：单用户【找回丢失密码】</li>
+<li>2：多用户状态无网络服务</li>
+<li>3：多用户状态有网络服务</li>
+<li>4：系统未使用保留给用户</li>
+<li>5：图形界面</li>
+<li>6：系统重启</li>
+</ul>
+</li>
+<li>常用运行级别是 3 和 5 ，要修改默认的运行级别可改文件 /etc/inittab 的 id:5:initdefault:这一行中的数字</li>
+</ul>
+<h3 id="912-systemd">9.1.2 systemd</h3>
+<ul>
+<li>systemd是Linux电脑操作系统之下的一套中央化系统及设置管理程序，包括有守护进程、程序库以及应用软件。</li>
+<li>inittab is no longer used when using <strong>systemd</strong>. systemd uses “targets” instead of runlevels. By default, there are two main targets:
+<ul>
+<li>multi-user.target: analogous to runlevel 3</li>
+<li>graphical.target: analogous to runlevel 5</li>
+</ul>
+</li>
+<li>systemctl get-default：查看当前target</li>
+<li>systemctl set-default multi-user.target/graphical.target：设置target</li>
+</ul>
+<h2 id="92-运行级别相关指令">9.2 运行级别相关指令</h2>
+<ul>
+<li>init [012356]
+<ul>
+<li>切换到指定运行级别</li>
+</ul>
+</li>
+</ul>
+<h3 id="921-找回root密码">9.2.1 找回root密码</h3>
+<ul>
+<li>进入到 单用户模式，然后修改 root 密码。因为进入单用户模式，root 不需要密码就可 以登录。</li>
+<li>开机 -&gt; 在引导时输入 回车键 -&gt; 看到一个界面输入 e -&gt; 看到一个新的界面，选中第二行（编辑内核）再输入 e -&gt; 在这行最后输入 1 ,再输入 回车键 -&gt; 再次输入 b -&gt; 这时就会进入到单用户模式。</li>
+<li>这时，我们就进入到单用户模式，使用 passwd 指令来修改 root 密码。</li>
+</ul>
+<h2 id="93-帮助指令">9.3 帮助指令</h2>
+<ul>
+<li>man [命令或配置文件]
+<ul>
+<li>获得帮助信息</li>
+</ul>
+</li>
+<li>help 命令
+<ul>
+<li>获得 shell 内置命令的帮助信息</li>
+</ul>
+</li>
+</ul>
+<h2 id="94-文件目录类">9.4 文件目录类</h2>
+<ul>
+<li>pwd
+<ul>
+<li>显示当前工作目录的绝对路径</li>
+</ul>
+</li>
+<li>ls [选项] [目录或文件]
+<ul>
+<li>-a ：显示当前目录所有的文件和目录，包括隐藏的</li>
+<li>-l ：以列表的方式显示信息</li>
+<li>-h：human，易读的方式显示信息</li>
+</ul>
+</li>
+<li>cd [目录]
+<ul>
+<li>切换到指定目录</li>
+<li>cd ~ 或者 cd ：回到自己的家目录</li>
+<li>cd .. 回到当前目录的上一级目录</li>
+</ul>
+</li>
+<li>mkdir [选项] 要创建的目录
+<ul>
+<li>-p ：创建多级目录</li>
+</ul>
+</li>
+<li>rmdir [选项] 要删除的空目录
+<ul>
+<li>删除的是空目录，如果目录下有内容时无法删除的</li>
+</ul>
+</li>
+<li>rm [选项] 要删除的文件或目录
+<ul>
+<li>删除文件或目录</li>
+<li>-r ：递归删除整个文件夹</li>
+<li>-f ： 强制删除不提示</li>
+</ul>
+</li>
+<li>touch 文件名称1 &hellip;
+<ul>
+<li>创建空文件</li>
+</ul>
+</li>
+<li><strong>cp</strong> [选项] source dest
+<ul>
+<li>拷贝文件或文件夹到指定目录下</li>
+<li>-r ：递归复制整个文件夹</li>
+<li>当目标目录有同名文件，强制覆盖不提示的方法：\cp &hellip;&hellip;</li>
+</ul>
+</li>
+<li>mv oldNameFile newNameFile
+<ul>
+<li>重命名</li>
+</ul>
+</li>
+<li>mv File Folder
+<ul>
+<li>移动文件</li>
+</ul>
+</li>
+<li>cat [选项] 要查看的文件
+<ul>
+<li>查看文件内容，是以只读的方式打开</li>
+<li>-n ：显示行号</li>
+</ul>
+</li>
+<li>more 要查看的文件
+<ul>
+<li>more 指令是一个基于 vi 编辑器的文本过滤器，它以全屏幕的方式按页显示文本文件的内容。</li>
+<li>快捷键
+<ul>
+<li>space：向下翻一页</li>
+<li>Enter：向下翻一行</li>
+<li>q：立刻离开more.不再显示该文件内容</li>
+<li>Ctrl+F：向下滚动一屏</li>
+<li>
+<h1 id="返回上一屏">Ctrl+B
+返回上一屏</h1>
+输出当前行的行号
+f
+输出文件名和当前行的行号</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -502,7 +1023,15 @@
 </ul>
 </li>
 </ul>
-<h1 id="第14章-实操篇-进程管理">第14章 实操篇 进程管理</h1>
+<h1 id="第-14-章-实操篇-进程管理">第 14 章 实操篇 进程管理</h1>
+<h2 id="141-进程的基本介绍">14.1 进程的基本介绍</h2>
+<ol>
+<li>在 LINUX 中，每个执行的程序（代码）都称为一个进程。每一个进程都分配一个 ID 号。</li>
+<li>每一个进程，都会对应一个父进程，而这个父进程可以复制多个子进程。例如 www 服务器。
+3)每个进程都可能以两种方式存在的。前台与后台，所谓前台进程就是用户目前的屏幕上可以进
+行操作的。后台进程则是实际在操作，但由于屏幕上无法看到的进程，通常使用后台方式执行。
+4)一般系统的服务都是以后台进程的方式存在，而且都会常驻在系统中。直到关机才才结束。</li>
+</ol>
 <h2 id="145-服务管理-">14.5 服务管理 *</h2>
 <h1 id="查看linux发行版的名称及其版本号">查看Linux发行版的名称及其版本号</h1>
 <ul>
@@ -583,6 +1112,160 @@
 <ul>
 <li>函数名后面小括号可选</li>
 </ul>
+<h1 id="第-18-章-python-定制篇-开发平台-ubuntu">第 18 章 Python 定制篇 开发平台 Ubuntu</h1>
+<h2 id="181-ubuntu-的介绍">18.1 Ubuntu 的介绍</h2>
+<ul>
+<li>Ubuntu 是一个以桌面应用为主的开源 GNU/Linux 操作系统，Ubuntu 是基于 GNU/Linux，支持 x86、amd64（即 x64）和 ppc 架构，由全球化的专业开发团队（Canonical Ltd）打造的。</li>
+<li>专业的 Python 开发者一般会选择 Ubuntu 这款 Linux 系统作为生产平台，而且 Ubuntu 安装时会自动安装 Python环境。</li>
+</ul>
+<h2 id="182-ubuntu-的安装">18.2 Ubuntu 的安装</h2>
+<h3 id="1821-安装的步骤">18.2.1 安装的步骤</h3>
+<h3 id="1822-设置语言和输入源">18.2.2 设置语言和输入源</h3>
+<ul>
+<li>1.设置语言
+<ul>
+<li>设置 -&gt; 区域与语言 -&gt; 管理已安装的语言 -&gt; 添加或删除语言 -&gt; 中文简体 -&gt; 应用 -&gt; 拖到最上面 -&gt; 重启</li>
+</ul>
+</li>
+<li>设置中文输入源
+<ul>
+<li>设置 -&gt; 区域与语言 -&gt; 输入源 -&gt; 添加输入源</li>
+<li>切换输入源
+<ul>
+<li>Shift + Super（WIN）+ 空格</li>
+<li>Super（WIN）+ 空格</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="183-ubuntu-的-root-用户">18.3 Ubuntu 的 root 用户</h2>
+<h3 id="1831-介绍">18.3.1 介绍</h3>
+<ul>
+<li>安装 ubuntu 成功后，都是普通用户权限，并没有最高 root 权限，如果需要使用 root 权限的时候，通常都会在命令前面加上 sudo 。</li>
+<li>一般使用su命令来直接切换到root用户的，但是如果没有给root设置初始密码，就会抛出 su : Authentication failure 这样的问题。所以，我们只要给 root 用户设置一个初始密码就好了。</li>
+</ul>
+<h3 id="1832-给-root-用户设置密码并使用">18.3.2 给 root 用户设置密码并使用</h3>
+<ol>
+<li>
+<p>输入 sudo passwd 命令，输入一般用户密码并设定 root 用户密码。</p>
+</li>
+<li>
+<p>设定 root 密码成功后，输入 su 命令，并输入刚才设定的 root 密码，就可以切换成 root 用户。</p>
+</li>
+</ol>
+<ul>
+<li>提示符$代表一般用户，提示符#代表 root 用户。</li>
+</ul>
+<ol start="3">
+<li>输入 exit 命令，退出 root 并返回一般用户。</li>
+</ol>
+<h2 id="184-ubuntu-下开发-python">18.4 Ubuntu 下开发 Python</h2>
+<ul>
+<li>安装好 Ubuntu 后，默认就已经安装好 Python 的开发环境。</li>
+</ul>
+<h1 id="第-19-章-python-定制篇-apt-软件管理和远程登录">第 19 章 Python 定制篇 apt 软件管理和远程登录</h1>
+<h2 id="191-apt-介绍">19.1 apt 介绍</h2>
+<ul>
+<li>apt 是 Advanced Packaging Tool 的简称，是一款安装包管理工具。</li>
+<li>在 Ubuntu 下，apt 命令可用于软件包的安装、删除、清理等，类似于 Windows 中的软件管理工具。</li>
+<li>unbuntu 软件管理的原理示意图：</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="images/image-20200807083144022.png"
+        data-srcset="/linux/images/image-20200807083144022.png, images/image-20200807083144022.png 1.5x, /linux/images/image-20200807083144022.png 2x"
+        data-sizes="auto"
+        alt="/linux/images/image-20200807083144022.png"
+        title="image-20200807083144022" /></p>
+<h2 id="192-ubuntu-软件操作的相关命令">19.2 Ubuntu 软件操作的相关命令</h2>
+<ul>
+<li>sudo apt-get update 更新源</li>
+<li>sudo apt-get install package 安装包</li>
+<li>sudo apt-get remove package 删除包</li>
+<li>sudo apt-cache search package 搜索软件包</li>
+<li>sudo apt-cache show package 获取包的相关信息，如说明、大小、版本等</li>
+<li>sudo apt-get install package &ndash;reinstall 重新安装包</li>
+<li>sudo apt-get -f install 修复安装</li>
+<li>sudo apt-get remove package &ndash;purge 删除包，包括配置文件等</li>
+<li>sudo apt-get build-dep package 安装相关的编译环境</li>
+<li>sudo apt-get upgrade 更新已安装的包</li>
+<li>sudo apt-get dist-upgrade 升级系统</li>
+<li>sudo apt-cache depends package 了解使用该包依赖那些包</li>
+<li>sudo apt-cache rdepends package 查看该包被哪些包依赖</li>
+<li>sudo apt-get source package 下载该包的源代码</li>
+</ul>
+<h2 id="193-更新-ubuntu-软件下载地址">19.3 更新 Ubuntu 软件下载地址</h2>
+<h3 id="1931-原理示意图">19.3.1 原理示意图</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="images/image-20200807083318090.png"
+        data-srcset="/linux/images/image-20200807083318090.png, images/image-20200807083318090.png 1.5x, /linux/images/image-20200807083318090.png 2x"
+        data-sizes="auto"
+        alt="/linux/images/image-20200807083318090.png"
+        title="image-20200807083318090" /></p>
+<h3 id="1932-寻找国内镜像源">19.3.2 寻找国内镜像源</h3>
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/">https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/</a></p>
+<h3 id="1933-备份-ubuntu-默认的源地址">19.3.3 备份 Ubuntu 默认的源地址</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="1934-更新源服务器列表">19.3.4 更新源服务器列表</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get update
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="195-使用-ssh-远程登录-ubuntu">19.5 使用 SSH 远程登录 Ubuntu</h2>
+<h3 id="1951-ssh-介绍">19.5.1 SSH 介绍</h3>
+<ul>
+<li>SSH 为 Secure Shell 的缩写，由 IETF 的网络工作小组（Network Working Group）所制定；SSH 为建立在应用层和传输层基础上的安全协议。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。常用于远程登录，以及用户之间进行资料拷贝。几乎所有 UNIX 平台—包括 HP-UX、Linux、AIX、Solaris、Digital UNIX、Irix，以及其他平台，都可运行 SSH。</li>
+<li>使用 SSH 服务，需要安装相应的服务器和客户端。和 CentOS 不一样，Ubuntu 默认没有安装 SSHD 服务，因此，我们不能进行远程登录。</li>
+</ul>
+<h3 id="1951-安装-ssh-和启用">19.5.1 安装 SSH 和启用</h3>
+<ul>
+<li>执行如下指令后，在当前这台 Linux 上就安装了 SSH 服务端和客户端。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get install openssh-server
+systemctl start sshd
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>从 Linux 系统客户机远程登陆 linux 系统服务机
+<ul>
+<li>ssh 用户名@IP</li>
+</ul>
+</li>
+<li>登出
+<ul>
+<li>exit 或者 logout</li>
+</ul>
+</li>
+</ul>
+<h2 id="196-ubuntu-注意问题">19.6 Ubuntu 注意问题</h2>
+<ul>
+<li>/usr/bin/xauth:  timeout in locking authority file /home/xumin//.Xauthority
+<ul>
+<li>使用新建用户xumin登录的错误提示？？？</li>
+</ul>
+</li>
+</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -592,9 +1275,7 @@
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
-            <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/linux/index.md" target="_blank">阅读原始文档</a>
-                        </span></div>
+            <div class="post-info-md"></div>
             <div class="post-info-share">
                 <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://duanlianjie.github.io/linux/" data-title="Linux" data-hashtags="Linux"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://duanlianjie.github.io/linux/" data-hashtag="Linux"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Linkedin" data-sharer="linkedin" data-url="https://duanlianjie.github.io/linux/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://duanlianjie.github.io/linux/" data-title="Linux"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 百度" data-sharer="baidu" data-url="https://duanlianjie.github.io/linux/" data-title="Linux"><i data-svg-src="/lib/simple-icons/icons/baidu.min.svg"></i></a></span>
             </div>
@@ -609,13 +1290,14 @@
     </div>
 
     <div class="post-nav"><a href="/interview/" class="prev" rel="prev" title="面试题"><i class="fas fa-angle-left fa-fw"></i>面试题</a>
-            <a href="/github/" class="next" rel="next" title="将Github pages部署的静态网页绑定个人域名">将Github pages部署的静态网页绑定个人域名<i class="fas fa-angle-right fa-fw"></i></a></div>
+            <a href="/spring/" class="next" rel="next" title="Spring">Spring<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">段连杰</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">段连杰</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp">皖ICP备20013328号</span></div>
         </div>
     </footer></div>
 

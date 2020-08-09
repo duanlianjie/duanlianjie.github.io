@@ -4,20 +4,27 @@
         <link>https://duanlianjie.github.io/posts/</link>
         <description>所有文章 | 段连杰</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>duanlianjie1999@qq.com (段连杰)</managingEditor>
-            <webMaster>duanlianjie1999@qq.com (段连杰)</webMaster><lastBuildDate>Thu, 30 Jul 2020 22:31:17 &#43;0800</lastBuildDate><atom:link href="https://duanlianjie.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>将Github pages部署的静态网页绑定个人域名</title>
-    <link>https://duanlianjie.github.io/github/</link>
-    <pubDate>Thu, 30 Jul 2020 22:31:17 &#43;0800</pubDate>
+            <webMaster>duanlianjie1999@qq.com (段连杰)</webMaster><lastBuildDate>Sun, 09 Aug 2020 10:00:44 &#43;0800</lastBuildDate><atom:link href="https://duanlianjie.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>MySQL SOURCE 导入脚本时 Error: Failed to open file，error: 2</title>
+    <link>https://duanlianjie.github.io/mysqlsourceerror2/</link>
+    <pubDate>Sun, 09 Aug 2020 10:00:44 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://duanlianjie.github.io/github/</guid>
-    <description><![CDATA[[TOC] 将Github pages部署的静态网页绑定个人域名 一. 域名解析服务商配置 以腾讯云为例 1. 控制台 —— 云产品 —— 域名注册 2. 我的域名 —— 解析 3. 添加]]></description>
+    <guid>https://duanlianjie.github.io/mysqlsourceerror2/</guid>
+    <description><![CDATA[[TOC] MySQL SOURCE 导入脚本时 Error: Failed to open file，error: 2 路径使用绝对路径 路径不要含有中文 路径不需要加任何引号 Windows下使用正斜杠 “/”]]></description>
+</item><item>
+    <title>Spring</title>
+    <link>https://duanlianjie.github.io/spring/</link>
+    <pubDate>Sat, 01 Aug 2020 23:16:14 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://duanlianjie.github.io/spring/</guid>
+    <description><![CDATA[[TOC] IOC BeanFactory 和 ApplicationContext （1）BeanFactory：IOC容器基本实现，是Spring内部的使用接口，不提供开发人员进行使用 加载配置文件时候不会创建对象]]></description>
 </item><item>
     <title>Linux</title>
     <link>https://duanlianjie.github.io/linux/</link>
     <pubDate>Fri, 24 Jul 2020 20:44:29 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://duanlianjie.github.io/linux/</guid>
-    <description><![CDATA[[TOC] 第4章 基础篇 Linux的目录结构 4.1 基本介绍 linux的文件系统是采用级层式的树状目录结构，在此结构中的最上层是根目录“/”，然后在此目录下]]></description>
+    <description><![CDATA[[TOC] 第 1 章 开山篇 Linux 学习介绍 1.1 Linux 的学习方向 Linux 运维工程师 Linux 嵌入式开发工程师 在 Linux 下做各种程序开发 1.2 Linux 的应用领域 1.2.1 个人桌面应用领域 传统 linux 应用最薄弱的环]]></description>
 </item><item>
     <title>面试题</title>
     <link>https://duanlianjie.github.io/interview/</link>
@@ -26,39 +33,46 @@
     <guid>https://duanlianjie.github.io/interview/</guid>
     <description><![CDATA[[TOC] String String为什么是final类型的？ final修饰的类是不被能继承的，所以final修饰的类是不能被篡改的。 原因 为了实现字符串池 只有当]]></description>
 </item><item>
-    <title>Hugo中Markdown转网页的一些注意事项</title>
-    <link>https://duanlianjie.github.io/hugomarkdown/</link>
-    <pubDate>Tue, 21 Jul 2020 22:31:23 &#43;0800</pubDate>
+    <title>MySQL 8.0 安装步骤</title>
+    <link>https://duanlianjie.github.io/mysql/</link>
+    <pubDate>Thu, 16 Jul 2020 23:16:14 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://duanlianjie.github.io/hugomarkdown/</guid>
-    <description><![CDATA[Hugo中Markdown转网页的一些注意事项 图片引用路径 方式1： 将Markdown中引用的图片放到Hugo项目的static目录下，注意不]]></description>
+    <guid>https://duanlianjie.github.io/mysql/</guid>
+    <description><![CDATA[[TOC] MySQL 8.0 安装步骤 MSI安装方式 1. 下载MSI文件 百度百科：MSI文件是Windows Installer的数据包，它实际上是一个数据库，包含安装一]]></description>
+</item><item>
+    <title>Java EE的三层架构</title>
+    <link>https://duanlianjie.github.io/javaee/</link>
+    <pubDate>Wed, 15 Jul 2020 23:16:14 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://duanlianjie.github.io/javaee/</guid>
+    <description><![CDATA[[TOC] 三层架构 三层架构(3-tier architecture)：通常意义上的三层架构就是将整个业务应用划分为：表现层（UI）、业务逻辑层（BLL]]></description>
+</item><item>
+    <title>将Github pages部署的静态网页绑定个人域名</title>
+    <link>https://duanlianjie.github.io/github/</link>
+    <pubDate>Tue, 14 Jul 2020 22:31:17 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://duanlianjie.github.io/github/</guid>
+    <description><![CDATA[将Github pages部署的静态网页绑定个人域名 一. 域名解析服务商配置 以腾讯云为例 1. 控制台 —— 云产品 —— 域名注册 2. 我的域名 —— 解析 3. 添加记]]></description>
 </item><item>
     <title>将Hugo生成的静态网页部署到云服务器</title>
     <link>https://duanlianjie.github.io/hugotoserver/</link>
-    <pubDate>Sun, 19 Jul 2020 18:39:03 &#43;0800</pubDate>
+    <pubDate>Tue, 14 Jul 2020 18:39:03 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://duanlianjie.github.io/hugotoserver/</guid>
     <description><![CDATA[将Hugo生成的静态网页部署到云服务器 以CentOS 7.6云服务器为例 使用Xshell登录云服务器或使用WebShell登录云服务器(在服务]]></description>
 </item><item>
     <title>将Hugo生成的静态网页部署到Github</title>
     <link>https://duanlianjie.github.io/hugotogithub/</link>
-    <pubDate>Thu, 16 Jul 2020 21:58:14 &#43;0800</pubDate>
+    <pubDate>Mon, 13 Jul 2020 21:58:14 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://duanlianjie.github.io/hugotogithub/</guid>
     <description><![CDATA[将Hugo生成的静态网页部署到Github 前提条件 成功安装Hugo，在源文件目录下运行hugo serve时可以在浏览器输入localhost]]></description>
 </item><item>
-    <title>我的第一篇文章</title>
-    <link>https://duanlianjie.github.io/first/</link>
-    <pubDate>Wed, 15 Jul 2020 23:16:14 &#43;0800</pubDate>
+    <title>Hugo中Markdown转网页的一些注意事项</title>
+    <link>https://duanlianjie.github.io/hugomarkdown/</link>
+    <pubDate>Sun, 12 Jul 2020 22:31:23 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://duanlianjie.github.io/first/</guid>
-    <description><![CDATA[段连杰 好好学习 天天向上]]></description>
-</item><item>
-    <title>Emoij支持</title>
-    <link>https://duanlianjie.github.io/emoij/</link>
-    <pubDate>Tue, 01 Jan 2019 16:41:27 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://duanlianjie.github.io/emoij/</guid>
-    <description><![CDATA[​ 原文链接 Emoji 支持 Emoji 可以通过多种方式在 Hugo 项目中启用. emojify 方法可以直接在模板中调用, 或者使用行内 Shortcodes. 要全局使用 emoji, 需要在你的网站配置中设置 enableEmoji 为 true, 然后你]]></description>
+    <guid>https://duanlianjie.github.io/hugomarkdown/</guid>
+    <description><![CDATA[Hugo中Markdown转网页的一些注意事项 图片引用路径 方式1： 将Markdown中引用的图片放到Hugo项目的static目录下，注意不]]></description>
 </item></channel>
 </rss>

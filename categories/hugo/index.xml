@@ -4,19 +4,26 @@
         <link>https://duanlianjie.github.io/categories/hugo/</link>
         <description>Hugo - 分类 - 段连杰</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>duanlianjie1999@qq.com (段连杰)</managingEditor>
-            <webMaster>duanlianjie1999@qq.com (段连杰)</webMaster><lastBuildDate>Sun, 19 Jul 2020 18:39:03 &#43;0800</lastBuildDate><atom:link href="https://duanlianjie.github.io/categories/hugo/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>duanlianjie1999@qq.com (段连杰)</webMaster><lastBuildDate>Tue, 14 Jul 2020 18:39:03 &#43;0800</lastBuildDate><atom:link href="https://duanlianjie.github.io/categories/hugo/" rel="self" type="application/rss+xml" /><item>
     <title>将Hugo生成的静态网页部署到云服务器</title>
     <link>https://duanlianjie.github.io/hugotoserver/</link>
-    <pubDate>Sun, 19 Jul 2020 18:39:03 &#43;0800</pubDate>
+    <pubDate>Tue, 14 Jul 2020 18:39:03 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://duanlianjie.github.io/hugotoserver/</guid>
     <description><![CDATA[将Hugo生成的静态网页部署到云服务器 以CentOS 7.6云服务器为例 使用Xshell登录云服务器或使用WebShell登录云服务器(在服务]]></description>
 </item><item>
     <title>将Hugo生成的静态网页部署到Github</title>
     <link>https://duanlianjie.github.io/hugotogithub/</link>
-    <pubDate>Thu, 16 Jul 2020 21:58:14 &#43;0800</pubDate>
+    <pubDate>Mon, 13 Jul 2020 21:58:14 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://duanlianjie.github.io/hugotogithub/</guid>
     <description><![CDATA[将Hugo生成的静态网页部署到Github 前提条件 成功安装Hugo，在源文件目录下运行hugo serve时可以在浏览器输入localhost]]></description>
+</item><item>
+    <title>Hugo中Markdown转网页的一些注意事项</title>
+    <link>https://duanlianjie.github.io/hugomarkdown/</link>
+    <pubDate>Sun, 12 Jul 2020 22:31:23 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://duanlianjie.github.io/hugomarkdown/</guid>
+    <description><![CDATA[Hugo中Markdown转网页的一些注意事项 图片引用路径 方式1： 将Markdown中引用的图片放到Hugo项目的static目录下，注意不]]></description>
 </item></channel>
 </rss>

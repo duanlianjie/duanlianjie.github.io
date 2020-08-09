@@ -4,17 +4,17 @@
         <link>https://duanlianjie.github.io/categories/markdown/</link>
         <description>Markdown - 分类 - 段连杰</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>duanlianjie1999@qq.com (段连杰)</managingEditor>
-            <webMaster>duanlianjie1999@qq.com (段连杰)</webMaster><lastBuildDate>Tue, 21 Jul 2020 22:31:23 &#43;0800</lastBuildDate><atom:link href="https://duanlianjie.github.io/categories/markdown/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>duanlianjie1999@qq.com (段连杰)</webMaster><lastBuildDate>Sun, 12 Jul 2020 22:31:23 &#43;0800</lastBuildDate><atom:link href="https://duanlianjie.github.io/categories/markdown/" rel="self" type="application/rss+xml" /><item>
     <title>Hugo中Markdown转网页的一些注意事项</title>
     <link>https://duanlianjie.github.io/hugomarkdown/</link>
-    <pubDate>Tue, 21 Jul 2020 22:31:23 &#43;0800</pubDate>
+    <pubDate>Sun, 12 Jul 2020 22:31:23 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://duanlianjie.github.io/hugomarkdown/</guid>
     <description><![CDATA[Hugo中Markdown转网页的一些注意事项 图片引用路径 方式1： 将Markdown中引用的图片放到Hugo项目的static目录下，注意不]]></description>
 </item><item>
     <title>Emoij支持</title>
     <link>https://duanlianjie.github.io/emoij/</link>
-    <pubDate>Tue, 01 Jan 2019 16:41:27 &#43;0800</pubDate>
+    <pubDate>Tue, 09 Jul 2019 16:41:27 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://duanlianjie.github.io/emoij/</guid>
     <description><![CDATA[​ 原文链接 Emoji 支持 Emoji 可以通过多种方式在 Hugo 项目中启用. emojify 方法可以直接在模板中调用, 或者使用行内 Shortcodes. 要全局使用 emoji, 需要在你的网站配置中设置 enableEmoji 为 true, 然后你]]></description>
